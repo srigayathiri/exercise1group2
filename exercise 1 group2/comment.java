@@ -1,27 +1,18 @@
 import java.util.*;
-public class digit
-{
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args)
-    {
-        System.out.println("enter a decimal");
-        Scanner obj=new Scanner(System.in);
-        int n=obj.nextInt();
-        int i=0,r;
-        while(n>0)
-        {
-         r=n%10;
-         i++;
-        n=n/10;    
-        }
-        if (i==1)
-        System.out.printf("the decimal is of %d digit",i);
+public class min {
+    public static void main(String[] args) {
+        int a=Integer.parseInt(args[0]);
+        int b=Integer.parseInt(args[1]);
+        int c=Integer.parseInt(args[2]);
+        if(a<b && a<c)
+            System.out.printf("%d is smallest",a);
+        else if(b<c)
+            System.out.printf("%d is smallest",b);
         else
-        System.out.printf("the decimal is of %d digits",i);
-    }
+            System.out.printf("%d is smallest",c);
+           
+           
+       
+    } 
+   
 }
-
-
